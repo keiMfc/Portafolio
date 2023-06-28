@@ -1,0 +1,16 @@
+section.footer{
+    gap: 0.625rem;
+    text-align: center;
+    background-color: var( --color-accent) ;
+    color: var( --background-blanco);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    section.footer{
+    max-width: none;
+    padding-left: calc((100% - 1136px)/2);
+    padding-right: calc((100% - 1136px)/2);
+    }
+}

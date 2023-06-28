@@ -1,0 +1,120 @@
+section.formcontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--background-lila-claro);
+}
+
+.formcontacto__contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formcontacto__izquierda {
+    display: none;
+}
+
+.formcontacto__derecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontacto__subtext {
+    font-weight: 500;
+    margin-block-end: 1.5rem;
+}
+
+.formcontacto__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontacto__label {
+    align-self: self-start;
+    margin-bottom: 0.5rem;
+}
+
+.formcontacto__input,
+.formcontacto__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    font-family: var(--Raleway);
+    margin-bottom: 1rem;
+}
+
+.formcontacto__textarea {
+    margin-bottom: 2rem;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+}
+
+input.formcontacto__input:focus,
+.formcontacto__textarea:focus {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+
+.formcontacto__boton {
+    background-color: var(--color-accent);
+    color: var(--background-blanco);
+}
+
+
+@media screen and (min-width: 768px) {
+    section.formcontacto {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.formcontacto {
+        max-width: none;
+        padding-left: calc((100% - 1136px)/2);
+        padding-right: calc((100% - 1136px)/2);
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .formcontacto__contacto {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formcontacto__izquierda {
+        display: flex;
+        width: 40%;
+    }
+
+    .formcontacto__text {
+        width: 55%;
+    }
+
+    .formcontacto__subtext {
+        font-size: 16px;
+    }
+
+    .formcontacto__form {
+        align-items: flex-start;
+    }
+
+}

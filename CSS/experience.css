@@ -1,0 +1,110 @@
+section.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.experience__section__title {
+    margin-bottom: 1rem;
+}
+
+.experience__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.experience__img {
+    border-radius: 16px;
+}
+
+.experience__box__description__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__text {
+    font-weight: 500;
+}
+
+.experience__description {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.experience__boton--repo {
+    color: var(--color-accent);
+}
+
+.experience__boton--demo {
+    background-color: var(--color-accent);
+    color: var(--background-blanco);
+}
+
+@media screen and (min-width: 768px) {
+    section.experience {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .experience__box__description__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .experience__description {
+        width: max-content;
+        max-width: 350px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.experience {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .experience__box:nth-child(odd) {
+        flex-direction: row-reverse;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+
+    .experience__box:nth-child(even) {
+        flex-direction: row;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+
+    .experience__img {
+        width: 70%;
+    }
+
+    .experience__box:nth-child(even) .experience__box__description__content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .experience__box:nth-child(odd) .experience__box__description__content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+}
