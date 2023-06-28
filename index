@@ -1,266 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Referencia al estilo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/base.css" />
+    <link rel="stylesheet" href="CSS/menu.css" />
+    <link rel="stylesheet" href="CSS/title.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/skills.css" />
+    <link rel="stylesheet" href="CSS/hobbies.css" />
+    <link rel="stylesheet" href="CSS/academic.css" />
+    <link rel="stylesheet" href="CSS/experience.css" />
+    <link rel="stylesheet" href="CSS/formcontacto.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
     <!-- Fuente del Proyecto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
     <title>Mi Portafolio</title>
 </head>
+
 <body>
     <!-- Menú -->
-    <div class="container">
-        <section class="menu container">
-            <header class="menu__header">
-                <img class="menu__header__logo" src="#" alt="keiMfc">
-            </header>
-            <nav class="menu__header__nav">
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#experience">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">keilin.michell@gmail.com</a></li>
-                </ul>
-                <li><a href="#contacto">keilin.michell@gmail.com</a></li>
-            </nav>
-        </section>
+    <div class="todo">
+        <div class="background__top">
+            <section class="menu container">
+                <header class="menu__header">
+                    <nav class="menu__header__nav">
+                        <h1 class="header__logo"><img src="assets/vector.png" alt="Logo" class="logo" /> keiMfc.</h1>
+                        <button class="nav__toggle">
+                            <img src="assets/menu.svg" alt="Menú" />
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list__item"><a href="#sobre-mi" class="link">Sobre mi</a></li>
+                            <li class="menu__list__item"><a href="#skills" class="link">Skills</a></li>
+                            <li class="menu__list__item"><a href="#hobbies" class="link">hobbies</a></li>
+                            <li class="menu__list__item">
+                                <a href="#formacion" class="link">Formación</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#experience" class="link">Proyectos</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#contacto" class="link">keilin.michell@gmail.com</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
 
-        <!-- Presentación -->
-        <section class="title container">
-            <div class="title__div">
-                <img src="assets/profile.png" s class="title__profile">
-                <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Keilin Figueredo <br> Desarolladora Fornt-end & Diseñadora UX-UI</h2>
-                    <h3 class="title__subtitle">blablabla</h3>
-                    <!-- Header presentación -->
-                    <ul class="title__network">
-                        <li class="title__network__item"><a href="#Github"> Icon github<img src="#Github" alt="Github"></a></li>
-                        <li class="title__network__item"><a href="#linkedin">Linkedin<img src="#linkedin" alt="Linkedin"></a></li>
-                        <li class="title__network__item"><a href="">Behance<img src="#Behance" alt="Behance"></a></li>
-                        <li class="title__network__item"><a href="">Currículo<img src="#cv" alt="Currículo"></a></li>
+            <!-- Presentación -->
+            <section class="title container">
+                <div class="title__div">
+                    <img src="assets/profile.png" s class="title__profile" />
+                    <div class="title__container">
+                        <h2 class="title__bio">
+                            Hola, soy Keilin Figueredo y construyo páginas web.
+                        </h2>
+                        <h3 class="title__subtitle">
+                            Diseñadora UX/UI y Desarrolladora Front-end, actualmente soy participe del proyecto
+                            Oracle ONE en
+                            Alura Latam.
+                        </h3>
+                        <!-- Header presentación -->
+                        <ul class="title__network">
+                            <li class="title__network__item">
+                                <a href="#Github">Github<img src="assets/arrow.svg" alt="Github" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="#linkedin">Linkedin<img src="assets/arrow.svg" alt="Linkedin" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="#Behance">Behance<img src="assets/arrow.svg" alt="Behance" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="#curriculum">Curriculum<img src="assets/arrow.svg" alt="Currículo" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sobre mi -->
+            <section class="about container" id="sobre-mi">
+                <div class="about__container">
+                    <h4 class="about__title">Sobre mi</h4>
+                    <p class="about__paragraph">
+                        Aunque mi trayectoria profesional comenzó en el campo de los riesgos
+                        y seguros, descubrí que mi verdadera pasión residía en dar vida a
+                        ideas innovadoras y cautivadoras a través del diseño y el desarrollo
+                        digital.
+                    </p>
+                    <p class="about__paragraph">
+                        Me defino por mi enfoque resolutivo y mi pasión por los proyectos
+                        creativos. Cada día busco aprender y crecer, sumergiéndome en nuevas
+                        oportunidades.
+                    </p>
+                    <p class="about__paragraph">
+                        En mi tiempo libre, disfruto de los videojuegos, la lectura y la
+                        compañía de mi gato.
+                    </p>
+                    <img src="#firma" alt="Firma" />
+                </div>
+            </section>
+        </div>
+        <!-- Skill -->
+        <section class="skills container" id="skills">
+            <h4 class="skills__title">Skills</h4>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/html-5.svg" alt="Logo de Html5" />
+                        </li>
+                        <li class="skills__name">Html 5</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/css-3.svg" alt="Logo de Css 3" />
+                        </li>
+                        <li class="skills__name">Css 3</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/javascript.svg" alt="Logo de JavaScript" />
+                        </li>
+                        <li class="skills__name">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/figma.svg" alt="Logo de Figma" />
+                        </li>
+                        <li class="skills__name">Figma</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/adobe-xd.svg" alt="Logo de AdobeXd" />
+                        </li>
+                        <li class="skills__name">Adobe Xd</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul class="skills__items">
+                        <li class="skills__img">
+                            <img src="assets/adobe-illustrator.svg" alt="Logo de Abobe Illustrator" />
+                        </li>
+                        <li class="skills__name">Illustrator</li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- Sobre mi -->
-        <section class="about container" id="sobre-mi">
-            <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">lorem ipsum</p>
-                <p>lorem ipsum</p>
-                <img src="#firma" alt="Firma">
-            </div>
-        </section>
-
-        <!-- Skill -->
-        <section class="skills container" id="skills">
-            <h3 class="skills__title">Skills</h3>
-                <div class="skills__line">
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"></li>
-                            <img src="#" alt="img">
-                            <li class="skills__name"></li>
-                        </ul>
-                    </div>
-                </div>
-            
         </section>
 
         <!-- Hobbies -->
         <section class="hobbies container" id="hobbies">
-            <h3 class="hobbies__title">Hobbies</h3>
-                <div class="hobbies__line">
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"></li>
-                            <img src="#" alt="img">
-                            <li class="hobbies__name"></li>
-                        </ul>
-                    </div>
+            <h4 class="hobbies__title">Hobbies</h4>
+            <div class="hobbies__line">
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/open-book--v1.png" alt="open-book--v1" />
+                        </li>
+                        <li class="hobbies__name">Leer</li>
+                    </ul>
                 </div>
-            
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/music.png" alt="music" />
+                        </li>
+                        <li class="hobbies__name">Oír música y bailar</li>
+                    </ul>
+                </div>
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/controller.png" alt="controller" />
+                        </li>
+                        <li class="hobbies__name">Videojuegos</li>
+                    </ul>
+                </div>
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/cinema-.png" alt="cinema-" />
+                        </li>
+                        <li class="hobbies__name">Ver series</li>
+                    </ul>
+                </div>
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/design.png" alt="design" />
+                        </li>
+                        <li class="hobbies__name">Hacer garabatos</li>
+                    </ul>
+                </div>
+                <div class="hobbies__box">
+                    <ul class="hobbies__items">
+                        <li class="hobbies__img">
+                            <img src="https://img.icons8.com/3d-fluency/94/forest.png" alt="forest" />
+                        </li>
+                        <li class="hobbies__name">Pasear</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Formación académica -->
         <section class="academic container" id="formacion">
-            <h2 class="academic__title">Formación académica</h2>
+            <h4 class="academic__title">Formación académica</h4>
             <div class="academic__courses">
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
-                        <li class="academic__courses__item__img">
-                            <img src="#" alt="#">
-                            <li class="academic__courses__item__title">Análisis de datos</li>
-                            <li class="academic__courses__item_subtitle">2018 - UFPR</li>
+                        <li class="academic__courses__item__img"><img src="assets/alura_logo.png" alt="Logo de Alura" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h5>Desarollador Front-end</h5>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2023 - Presente</p>
                         </li>
                     </ul>
                 </div>
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
                         <li class="academic__courses__item__img">
-                            <img src="#" alt="#">
-                            <li class="academic__courses__item__title">Análisis de datos</li>
-                            <li class="academic__courses__item_subtitle">2018 - UFPR</li>
+                            <img src="assets/uxuiopen.png" alt="Logo Utel" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h5>Diseñador Ux/Ui</h5>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2022 - 2023</p>
                         </li>
                     </ul>
                 </div>
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
-                        <li class="academic__courses__item__img">
-                            <img src="#" alt="#">
-                            <li class="academic__courses__item__title">Análisis de datos</li>
-                            <li class="academic__courses__item_subtitle">2018 - UFPR</li>
+                        <li class="academic__courses__item__img"><img src="assets/iutajs.png" alt="Logo IUTAJS" /></li>
+                        <li class="academic__courses__item__title">
+                            <h5>T.S.U en Riesgos y Seguros</h5>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2013 - 2016</p>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
         <!-- Experiencia -->
-        <section class="expetience container" id="experience">
-            <h2 class="experience__section__title">Experiencia profesional</h2>
+        <section class="experience container" id="experience">
+            <h4 class="experience__section__title">Experiencia profesional</h4>
             <div class="experience__box">
-                <img src="#" alt="#" class="experience__img">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Allura Codificador</h3>
+                <img src="assets/encriptador.png" alt="Imagen de Encriptador" class="experience__img" />
+                <div class="experience__box__description__content">
+                    <div class="experience__info">
+                        <h5 class="experience__title">Encriptador de texto</h5>
+                        <h6 class="experience__text">Challenge Allura Codificador</h6>
+                    </div>
                     <div class="experience__description">
-                        <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo">
+                            <a href="https://github.com/alura-challenges/challenge-one-encriptador-latam">
+                                <button class="experience__boton--repo boton">
+                                    Repositório
+                                </button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="">
+                                <button class="experience__boton--demo boton">
+                                    Ver demo
+                                </button>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="experience__box">
-                <img src="#" alt="#" class="experience__img">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Allura Codificador</h3>
+                <img src="assets/decod_print.png" alt="#" class="experience__img" />
+                <div class="experience__box__description__content">
+                    <div class="experience__info">
+                        <h5 class="experience__title">Portafolio</h5>
+                        <h6 class="experience__text">Challenge Allura Codificador</h6>
+                    </div>
                     <div class="experience__description">
-                        <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button
+                                    class="experience__boton--repo boton">
+                                    Repositório
+                                </button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="">
+                                <button class="experience__boton--demo boton">
+                                    Ver demo
+                                </button>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="experience__box">
-                <img src="#" alt="#" class="experience__img">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Allura Codificador</h3>
+                <img src="assets/decod_print.png" alt="#" class="experience__img" />
+                <div class="experience__box__description__content">
+                    <div class="experience__info">
+                        <h5 class="experience__title">Encriptador de texto</h5>
+                        <h6 class="experience__text">Challenge Allura Codificador</h6>
+                    </div>
                     <div class="experience__description">
-                        <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button
+                                    class="experience__boton--repo boton">
+                                    Repositório
+                                </button></a></span>
+                        <span class="experience__demo"><a href=""><button class="experience__boton--demo boton">
+                                    Ver demo
+                                </button>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="experience__box">
-                <img src="#" alt="#" class="experience__img">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Allura Codificador</h3>
+                <img src="assets/decod_print.png" alt="#" class="experience__img" />
+                <div class="experience__box__description__content">
+                    <div class="experience__info">
+                        <h5 class="experience__title">Matalindense</h5>
+                        <h6 class="experience__text">App móvil de Gestión de condominios, Proyecto de formación Ux-Ui
+                        </h6>
+                    </div>
                     <div class="experience__description">
-                        <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button
+                                    class="experience__boton--repo boton">
+                                    Repositório
+                                </button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="">
+                                <button class="experience__boton--demo boton">
+                                    Ver demo
+                                </button>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Contacto -->
         <section class="formcontacto container" id="contacto">
-            <div  class="formcontacto__contacto">
+            <div class="formcontacto__contacto">
                 <div class="formcontacto__izquierda">
-                    <img class="formcontacto__img" src="assets\contact_image.png">
+                    <img class="formcontacto__img" src="assets/contacto.png" />
                 </div>
                 <div class="formcontacto__text">
-                    <h2 class="formcontacto__title">Contacto</h2>
-                    <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontacto__subtext">Completa el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontacto__form" name="form">
-                        <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                    <h4 class="formcontacto__title">Contacto</h4>
+                    <h5 class="formcontacto__subtext">
+                        ¿Quieres contactarme?
+                        <br>
+                        Completa el siguiente formulario y me pondré en contacto lo antes posible.
+                    </h5>
+                    <form id="form" class="formcontacto__form" name="form">
+
+                        <label for="nombre" class="formcontacto__label">
+                            Nombre
+                        </label>
+                        <input class="formcontacto__input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
+                            required maxlength="50" />
+
+                        <label for="email" class="formcontacto__label">
+                            E-mail
+                        </label>
+                        <input type="email" class="formcontacto__input" id="email" name="email"
+                            placeholder="Ejemplo: hola@gmail.com" required />
+
+                        <label for="asunto" class="formcontacto__label">
+                            Asunto
+                        </label>
+                        <input type="text" class="formcontacto__input" id="asunto" name="asunto"
+                            placeholder="Escribe un asunto" required maxlength="50" />
+
+                        <label for="mensaje" class="formcontacto__label">
+                            Mensaje
+                        </label>
+                        <textarea class="formcontacto__textarea" rows="6" id="mensaje" name="mensaje"
+                            placeholder="Escribe un mensaje" required maxlength="300">
+                        </textarea>
+
+                        <button type="submit" value="submit" class="formcontacto__boton boton">Enviar mensaje
+                        </button>
                     </form>
+                    <a href="mailto:keilin.michell@gmail.com" id="mail-to">mail</a>
                 </div>
             </div>
         </section>
@@ -268,14 +412,14 @@
         <!-- Footer -->
         <section class="footer container">
             <div class="footer__rodapie">
-                <p>Desarrollado por Fulana de Tal</p>
+                <p>Desarrollado por Keilin Figueredo</p>
                 <p>2022</p>
             </div>
         </section>
     </div>
 
- <!-- JavaScript -->
-<script src="validacion.js"></script>
- 
+    <!-- JavaScript -->
+    <script src="main.js"></script>
 </body>
+
 </html>
