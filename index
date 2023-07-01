@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="CSS/experience.css" />
     <link rel="stylesheet" href="CSS/formcontacto.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
-    <!-------------------- Fuente e iconos del Proyecto -------------------->
+    <!-------------------- Fuente -------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Mi Portafolio</title>
 </head>
 
